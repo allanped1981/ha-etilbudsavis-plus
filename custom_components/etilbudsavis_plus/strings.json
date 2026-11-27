@@ -1,0 +1,52 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect eTilbudsavis",
+        "description": "Enter your account email to receive a one-time code.",
+        "data": {
+          "email": "Email"
+        }
+      },
+      "otp": {
+        "title": "Verify your email",
+        "description": "Enter the one-time code sent to {email}.",
+        "data": {
+          "otp": "One-time code"
+        }
+      },
+      "select_lists": {
+        "title": "Choose shopping lists",
+        "description": "Only the lists selected here will be synchronized with Home Assistant.",
+        "data": {
+          "selected_list_ids": "Shopping lists",
+          "preferred_store_ids": "Preferred stores"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "The email code or account session was rejected.",
+      "cannot_connect": "Could not connect to eTilbudsavis. Try again later."
+    },
+    "abort": {
+      "no_lists_found": "No shopping lists were returned for this account.",
+      "reauth_successful": "The eTilbudsavis account was reauthenticated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Select synchronized lists",
+        "description": "Changes apply only to the lists selected here.",
+        "data": {
+          "selected_list_ids": "Shopping lists",
+          "preferred_store_ids": "Preferred stores"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "The account session has expired. Reauthenticate the integration.",
+      "cannot_connect": "Could not load shopping lists from eTilbudsavis."
+    }
+  }
+}

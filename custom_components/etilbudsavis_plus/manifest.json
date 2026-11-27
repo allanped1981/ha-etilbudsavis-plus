@@ -1,0 +1,13 @@
+{
+  "domain": "etilbudsavis_plus",
+  "name": "eTilbudsavis Plus",
+  "codeowners": ["@allanped1981"],
+  "config_flow": true,
+  "dependencies": ["llm"],
+  "documentation": "https://github.com/allanped1981/ha-etilbudsavis-plus",
+  "issue_tracker": "https://github.com/allanped1981/ha-etilbudsavis-plus/issues",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "0.1.16"
+}
