@@ -1,0 +1,52 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Forbind eTilbudsavis",
+        "description": "Indtast e-mailadressen til din konto, så får du tilsendt en engangskode.",
+        "data": {
+          "email": "E-mail"
+        }
+      },
+      "otp": {
+        "title": "Bekræft din e-mail",
+        "description": "Indtast engangskoden sendt til {email}.",
+        "data": {
+          "otp": "Engangskode"
+        }
+      },
+      "select_lists": {
+        "title": "Vælg indkøbslister",
+        "description": "Kun de valgte lister synkroniseres med Home Assistant.",
+        "data": {
+          "selected_list_ids": "Indkøbslister",
+          "preferred_store_ids": "Foretrukne butikker"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Engangskoden eller kontosessionen blev afvist.",
+      "cannot_connect": "Kunne ikke forbinde til eTilbudsavis. Prøv igen senere."
+    },
+    "abort": {
+      "no_lists_found": "Der blev ikke fundet indkøbslister på kontoen.",
+      "reauth_successful": "eTilbudsavis-kontoen er godkendt igen."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Vælg synkroniserede lister",
+        "description": "Ændringer påvirker kun de lister, der vælges her.",
+        "data": {
+          "selected_list_ids": "Indkøbslister",
+          "preferred_store_ids": "Foretrukne butikker"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Kontosessionen er udløbet. Godkend integrationen igen.",
+      "cannot_connect": "Kunne ikke hente indkøbslister fra eTilbudsavis."
+    }
+  }
+}
