@@ -1,0 +1,8 @@
+title: Indkøb
+path: etilbudsavis
+icon: mdi:cart-outline
+type: panel
+cards:
+  - type: custom:etilbudsavis-plus-card
+    # Optional: set your own Home Assistant notification service here.
+    # notification_service: mobile_app_your_device
